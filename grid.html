@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image grid</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/black-bastion-house.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="images/black-bastion-house.jpg"onclick="openFullImg(this.src)">
+        <img src="images/brick-kiln-house.jpg"onclick="openFullImg(this.src)">
+        <img src="images/diya.jpg"onclick="openFullImg(this.src)">
+        <img src="images/exim-tower.jpg"onclick="openFullImg(this.src)">
+        <img src="images/forest-villa.jpg"onclick="openFullImg(this.src)">
+        <img src="images/gabion-house.jpg"onclick="openFullImg(this.src)">
+        <img src="images/gomati.jpg"onclick="openFullImg(this.src)">
+        <img src="images/goyal-house.jpg"onclick="openFullImg(this.src)">
+        <img src="images/house-cast-in-liquid-stone.jpg"onclick="openFullImg(this.src)">
+        <img src="images/house-of-secret-gardens.jpg"onclick="openFullImg(this.src)">
+        <img src="images/khadakwasla-house.jpg"onclick="openFullImg(this.src)">
+        <img src="images/mandvi-science-lab.jpg"onclick="openFullImg(this.src)">
+        <img src="images/mandvi.jpg"onclick="openFullImg(this.src)">
+        <img src="images/parikrama.jpg"onclick="openFullImg(this.src)">
+        <img src="images/the-soaring-rock.jpg"onclick="openFullImg(this.src)">
+        <img src="images/twin-houses.jpg"onclick="openFullImg(this.src)">
+
+    </div>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+     function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+     }
+     function closeFullImg(){
+        fullImgBox.style.display ="none";
+     }
+    </script>
+</body>
+</html>
